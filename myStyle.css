@@ -1,0 +1,342 @@
+@font-face {
+    font-family: 'Juache';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(255, 247, 101);
+    padding-top: 50px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+#container{
+    background-color: rgb(238, 95, 31);
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+    font-size: 0;
+}
+
+#footer{
+    background-color: rgb(238, 95, 31);
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+    width: 1180px; 
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.footer-content .text_footer:nth-child(2) {
+    text-align: right;
+}
+
+.main_content_bg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 150px;
+}
+
+.box{
+    position: relative;
+}
+
+.sticker-wrapper{
+    position: relative;
+    display: inline-flex;
+    padding-bottom: 620px
+}
+
+.sticker_bg{
+    display: block;
+}
+
+.rabubu, .texthip, .running, .stanley, .st_1, .st_2, .st_3, .st_4, .st_5, 
+.st_6, .st_7, .st_8, .st_9, .st_10, 
+.st_11, .st_12, .st_13, .st_14, .st_15{
+    position: absolute;
+    /*width: auto;*/
+}
+
+.rabubu{top: 80px;  left: 180px; z-index: 2;}
+.texthip{top: 180px; left: 590px; z-index: 2}
+.running{top: 530px; left: 180px; z-index: 2} 
+.stanley{top: 550px; left: 680px; z-index: 2}
+
+/*분홍 삼각형*/
+.st_1{
+    top: 80px;  left: 20px;
+    animation: st-shake 2s ease-in-out infinite;
+}
+
+/*주황 뾰쪽이*/
+.st_2{
+    top: -80px; left: 440px;
+    animation: st-shake2 2.5s ease-in-out infinite;
+}
+
+/*파랑 뾰쪽이 두줄*/
+.st_3{
+    top: -70px; left: 800px;
+    animation: st-shake 3s ease-in-out infinite;
+}
+
+/*move1*/
+.st_4{
+    top: 460px;  left: -10px;
+    animation: st-shake2 2s ease-in-out infinite;
+}
+
+/*파랑 뾰쪽이 두줄 작은거*/
+.st_5{
+    top: 550px; left: 420px;
+    animation: st-shake 2s ease-in-out infinite;
+}
+
+/*good*/
+.st_6{
+    top: 480px; right: 300px;
+    animation: st-shake2 2.5s ease-in-out infinite;
+}
+
+/*큰 뾰족이 파랑*/
+.st_7{
+    top: 370px; right: 10px;
+    animation: st-shake 2s ease-in-out infinite;
+}
+
+/*wow*/
+.st_8{
+    bottom: 730px; left: -10px;
+    animation: st-shake 2.5s ease-in-out infinite;
+}
+
+/*맨 밑에 뽀쪽이 파랑*/
+.st_9{
+    bottom: 390px; right: 690px;
+    animation: st-shake 2.7s ease-in-out infinite;
+}
+
+/*파랑 뾰쪽이 두줄*/
+.st_10{
+    bottom: 620px; left: 480px;
+    animation: st-shake2 1.8s ease-in-out infinite;
+}
+
+/*맨 밑 보라색*/
+.st_11{
+    bottom: 490px;left: 800px;
+    animation: st-shake 2.3s ease-in-out infinite;
+}
+
+/*맨 밑 분홍 삼각형*/
+.st_12{
+    bottom: 120px; left: 90px;
+    animation: st-shake2 2s ease-in-out infinite;
+}
+
+/*맨 밑 뾰쪽이 주황*/
+.st_13{
+    bottom: 250px; left: 590px;
+    animation: st-shake 2.8s ease-in-out infinite;
+}
+
+/*맨 밑 초록색 삼각형*/
+.st_14{
+    bottom: 80px; right: 120px;
+    animation: st-shake2 1.8s ease-in-out infinite;
+}
+
+/*individuallity*/
+.st_15{
+    bottom: 630px; right:10px;
+    animation: st-shake2 2.5s ease-in-out infinite;
+}
+
+
+.text_box_1, .text_box_2, .text_box_3, .text_box_4, .text_box_5{
+    background-color: white;
+    border: 2px solid black;
+    height: 155px;     
+    width: 1180px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.text_footer{
+    font-family: "Juache", sans-serif;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    width: 100%;
+}
+
+.text{
+    font-family: "Juache", sans-serif;
+    font-size: 1.45rem;
+    color: black;
+    text-align: justify;
+    width: 100%;
+}
+
+.text_box_1{
+    transform: rotate(2deg) translateX(-5px);
+    margin-bottom: -15px;
+    position: relative;
+    z-index: 1;
+}
+
+.text_box_2{
+    transform: rotate(-0.8deg) translateX(25px); 
+    margin-bottom: -10px;
+    position: relative;
+    z-index: 2;
+}
+
+.text_box_3{
+    transform: rotate(1.2deg) translateX(-5px);
+    margin-bottom: -15px;      
+    position: relative;
+    z-index: 3;
+}
+
+.text_box_4{
+    transform: rotate(-1.3deg) translateX(15px);
+    margin-bottom: -10px;      
+    position: relative;
+    z-index: 4;
+}
+
+.text_box_5{
+    transform: rotate(1.2deg) translateX(-10px);
+    position: relative;
+    z-index: 5; 
+}
+
+/*--------------------flex 모드 그리드 구성을 위한 클래스 모음------------------*/
+
+.row{
+    width: 800px;
+    display: flex;
+
+    justify-content: center;
+
+    margin: auto;
+    margin-bottom: 80px;
+    padding: 0pxz;
+}
+
+
+@keyframes st-shake {
+    0%, 100% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+}
+
+@keyframes st-shake2 {
+    0%, 100% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+}
+
+
+.rabubu, .texthip, .running, .stanley {
+    position: absolute;
+    object-fit: contain;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.rabubu {
+    top: 80px; left: 180px; z-index: 2;
+    width: 344px;
+    height: 425px;
+}
+
+.texthip {
+    top: 180px; left: 590px; z-index: 2;
+    width: 303px;
+    height: 320px;
+}
+
+.running {
+    top: 530px; left: 180px; z-index: 2;
+    width: 365px;
+    height: 438px;
+}
+
+.stanley {
+    top: 550px; left: 680px; z-index: 2;
+    width: 281px;
+    height: 432px;
+}
+
+.rabubu:hover {
+    transform: scale(1.1) translateX(-25px) translateY(-10px); 
+}
+
+.texthip:hover {
+    transform: scale(1.1) translateX(30px) translateY(-20px);
+}
+
+.running:hover {
+    transform: scale(1.1) translateX(-15px) translateY(25px);
+}
+
+.stanley:hover {
+    transform: scale(1.1) translateX(20px) translateY(20px);
+}
+
+.rabubu:hover { content: url('image/rabubu_sticker.png'); }
+.texthip:hover { content: url('image/texthip_sticker.png'); }
+.running:hover { content: url('image/running_sticker.png'); }
+.stanley:hover { content: url('image/stanley_sticker.png'); }
+
+footer p{padding: 3px 5px;}
+#footer{margin-bottom: 0px;}
